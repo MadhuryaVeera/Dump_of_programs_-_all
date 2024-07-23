@@ -1,0 +1,110 @@
+why do we need a file to open ?
+1.when u want to read content of a file.
+2. write simething in the file
+3.makinng changes or adding more content to a file(append)
+Mode
+------------
+1.Read------"r"
+2.Write-------"w"
+3.Append----------"a"
+fact about append mode is that kind of write mode,it can never over writes the content,it can keep it in write mode as always.
+syntaax:
+FILE*fp("file path","mode");-------->return as a ponter/file
+
+FILES IN C---------------
+#include<stdio.h>
+int main()
+{
+FILE *fp=fopen("hello.txt","r");//
+returns a pointer 
+//returns a null pointer if the file dolesnt exist 
+if(fp==null)printf("File does not exist");
+else printf("File is opened");
+
+char ch=fgetc(fp)
+printf("%c",ch);-----------either this or
+printf("%c",fgetc(fp)); ---------this
+
+
+functions that will help us read the contents from a file 
+1. fgetc()--->to read a single character from file
+2. fgets()---->to read a string (a collection of character from an opened file)
+3.fscanf()------>you can read the in a formatterd matter
+4. fputc()----------->
+5.fputs()-------->
+6. fprintf()--------->
+
+EOF-->end of the file
+char ch;------------this is tutorial on the files as a (output)
+do{
+ch=fgetc(fp);
+printf("%c",ch);
+}
+while(ch!=EOF);
+}
+
+
+char ch;
+while ((ch= fgetsc(fp)) !=EOF) {  ----same as above program in another way
+printf("%c",ch);
+}
+
+use of fgets
+---------------------
+1. dont need to run a loop eveytime 
+2. get ur string 
+3.syntax:----> buffer ,count of character,fileptr
+{
+char buffer[100];
+fgets(buffer, 10,fp);------------------this is tut(as a output) (for the which file we used)
+printf("%s",buffer);
+}
+
+3.fscanf()
+--------------
+synatax:--> (file name is input .txt)
+{
+int n;
+fscanf(fp, %d" ,&n);
+printf("%d",n*n);     ----(5)output
+}
+{
+int n;
+fscanf(fp,%d",&n);--------------
+int arr[n];
+for(int i=0;i,n;i++){
+fscanf(fp,%d",&arr[i]);------------------output as (150)
+sum+=arr[i];
+}
+printf("%d ", sum );
+}
+#include<stddio.h>
+int main()
+{
+FILE *fp=fopen("abc.txt","w");
+}
+4.fputc()
+----------------------
+fputc('z'.fp);
+
+
+5.fputs()
+------------------
+fputs("Hello this is c",fp);-----------------output wee can see in the file that wee already created
+
+
+6.finput and foutput(out put as a sqares like 100 400 900 1600 uoto size of an array)
+--------------------------------------
+#include<stdio.h>
+int main()
+{
+FILE *inputfp=fopen("input .txt","r");
+FILE *outputfp=fopen("output.txt","w");
+int n;
+fscanf(inputfp, "%d", &n);
+int arr[n];
+for(i=0;i<n;i++)
+{
+fscanf(inputfp,"%d",&arr[i]);
+fprintf(fp, "%d   ", arr[i] * arr[i]);
+} 

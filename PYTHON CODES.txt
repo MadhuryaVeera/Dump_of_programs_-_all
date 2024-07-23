@@ -1,0 +1,295 @@
+n=int(input())
+l=list(map(int,input().split()))
+c=0
+for i in l:
+    if i%2==0:
+        c=c+l
+print(c)
+
+absolute difference b/w sum:
+n=int(input())
+l=list(map(int,input().split()))
+c,d=0,0
+for i in range(len(l)):
+  if i%2==0:
+   c=c+l[i]
+   else:
+   d=d+l[i]
+print(abs(c-d))
+
+
+
+
+average or not:
+n=int(input())
+l=list(map(int,input().split()))
+k=sum(l)//len(l)
+if k in l:
+    print(True)
+else:
+    print(False)
+
+
+count of given elem in array:
+n=int(input())
+l=list(map(int,input().split()))
+k=int(input())    
+print(a.count(k))
+
+
+last even nubers in the array:
+n=int(input())
+l=list(map(int,input().split()))
+e=[]
+for i in l:
+   if i%2==0:
+     e.append(i)
+   print(e[-1])
+
+
+count odd b/w even nmuberrs::
+n=int(input())
+a=list(map(int,input().split()))
+count=0
+for i in range(1,n-1):
+    if a[i-1]%2==0 and a[i+1]%2==0 and a[i]%2!=0:
+        count+=1
+print(count)
+
+
+unique number:
+n=input()
+k=set(n)
+if len(k)==len(n):
+   print("Unique Number")
+else:
+print("Not Unique Number")
+
+unique sum::
+n=int(input())
+l=list(map(int,input().split()))
+k=0
+g=set(l)
+for i in g:
+    k+=i
+print(k)
+
+
+sum of elements not between a and b::
+n=int(input())----------------->7
+l=list(map(int,input().split()))------>1 2 3 4 5 6 7
+a,b=map(int,input().split())------------>2 5
+d=0
+k=sum(l)----------->28
+for i in l:
+    if i>=a and i<=b:     ----->   1>=2(no)and1<=5(yes)---->  2>=2(yes) and 2<=5(yes)......
+        d=d+i---> 14
+print(k-d)--------> 28-14=14
+
+level 13 ni madhu ni adagali:--------------------------------------------------------------
+even array---->level-15
+odd unique elememnts-->level 17-->not undestand
+
+capacity:
+a,b,c=map(int,input().split())
+k=(2*a*b*c*512)/1024
+print('%dKB'%k)
+
+unique elementds count::
+n=int(input())
+l=list(map(int,input().split()))
+c=0
+d=set(l)
+for i in d:
+    if i%2==0:
+        c=c+1
+print(c)
+
+
+
+unique elemnts even sum::
+n=int(input())
+l=list(map(int,input().split()))
+c=0
+d=set(l)
+for i in d:
+    if i%2==0 and i!=0:
+        c=c+i
+print(c)
+
+
+
+minimum  beteween a and b::(19)
+n=int(input())
+l=list(map(int,input().split()))
+a,b=map(int,input().split())
+c=[]
+for i in l:
+    if i>=a and i<=b:
+    c.append(i)
+if len(c)==0:
+    print(-1)
+else:
+    print(min(c))
+
+
+
+pangram or not::::
+n=map(str,input().split())
+for i in n:
+    if i not in alphanumeric:
+        print(False)
+    else:-------------->no output
+        print(True)
+
+final output pangram or not::
+n=input()
+n=n.lower()
+k='abcdefghijklmnopqrstuvwxyz'
+for i in k:
+    if i not in n:
+        print(False)
+        break
+else:
+    print(True)
+          
+
+
+isogram or not::         
+n=input()
+for i in n:
+    if n.count(i)>1:
+        print(False)
+        break
+else:
+    print(True)        
+  
+
+
+common elements::()
+a,b=map(int,input().split())
+m=list(map(int,input().split()))
+n=list(map(int,input().split()))
+g=m+n------------------------------------>no output
+print(set(g))
+  
+
+reverse of a atring --(27)
+n=list(map(str,input().split()))
+for i in n:--------------------------------->no output
+    print(i[::-1],end=" ")
+input::::::::codemind
+output:::::::dnimedoc
+
+final output in reverse of a string:::
+print(str(input()[::-1]))------------------>result
+
+reverse of every wprd--(27)
+n=list(map(str,input().split()))
+for i in n:--------------------------------->no output
+    print(i[::-1],end=" ")
+input::::::::codemind
+output:::::::dnimedoc
+
+final output reverse of every wprd(27)::
+n=input().split()
+for i in n:
+    print(i[::-1],end=" ")
+
+
+
+exchane of words::
+a=input().split()-------------->no output
+print(a[::-1],end=" ")
+input::::::this is codemind
+output:::::code mind is this
+
+exchane of words::
+a=input().split()
+print(*a[::-1])
+
+
+
+vowels in string:::------------------------>no output
+ch=input().split()
+for i in n:
+    m=ch=='a'||ch=='e'ch=='i'||ch=='o'||ch=='u'
+    n=ch=='A'||ch=='E'||ch=='I'||ch=='O||ch=='U'
+    if(m||n):
+        print(True)
+    else:
+        print(False)
+        
+    
+
+n=int(input())
+l=list(map(int,input().split()))
+
+
+
+
+mimimum digit elemnts::
+n=int(input())
+l=list(map(int,input().split()))
+f=[]
+w=[]
+for i in l:
+    d=str(i)
+    e=len(d)
+    f.append(e)
+for j in f:
+    d=min(f)
+    x=f.count(d)
+print(x)
+    
+
+count digits::
+n=int(input())
+a=list(map(int,input().split()))
+for i in a:
+    x=str(i)
+    p=len(x)
+    if(i<0):
+        p-=1
+    print(p,end=' ')
+
+
+    
+character in each word::
+n=input().split()
+for i in n:
+    print(len(i),end=' ')
+
+
+
+
+
+primes::
+n=int(input())
+c=0
+for i in range(1,n+1):
+    if n%i==0:
+        c+=1
+if c==2:
+    print('prime')
+else:
+    print('not a prime')
+
+
+
+
+
+
+
+perfect number:::
+a=int(input())
+c=0
+for i in range(1,a):
+    if(a%i==0):
+        c+=i
+if(c==a):
+    print(True)
+else:
+    print(False)
+
+        

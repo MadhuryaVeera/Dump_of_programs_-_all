@@ -1,0 +1,371 @@
+#include<iostream>
+using namespace std;
+
+class Class_name {
+	//mem fun//mem var
+	//public//private//protected
+	public:
+		string company,name,employeeid;------------------->class1
+	    int salary;
+};
+int main(){
+	Class_name s1,s2;
+	cin>>s2.name>>s2.employeeid;
+	cout<<s2.name<<endl;
+	cout<<s2.employeeid<<endl;
+	return 0;
+}
+
+
+
+
+
+#include<iostream>
+using namespace std;
+
+class Class_name {
+	//mem fun//mem var
+	//public//private//protected
+	public:
+		string company,name,employeeid;
+	    int salary;
+};
+int main(){
+	Class_name s1,s2;
+	cin>>s2.name>>s2.employeeid;
+	cout<<s2.name<<endl;----------------------------------->class2
+	cout<<s2.employeeid<<endl;
+	return 0;
+}
+
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+class Student{
+	public:
+		string names,id;
+	    Student(string n,string i)
+		{            //constructor
+	   names=n;//to remove the garabage value wee use "this" 
+	   id=i;
+	   }
+	   
+  // Student(string names,string id)
+	//	{            //
+	  //  this->names=names;//in the constuctor we usse names instead of n so in the declare in the code also names follwed n=by the namees
+		//this->id=id;
+	   //}
+	void display(){
+		cout<<names<<" "<<id<<endl;--------------------->class 3
+	}
+};
+
+int main(){
+	Student s1("madhu","122");
+	s1.display();
+	return 0;
+}
+
+
+
+
+ #include<iostream>
+using namespace std;
+class Student{
+	public:
+		string names,id;
+	   Student(string n,string i);
+	   
+	void display();
+};
+
+void Student::display()
+{
+   cout<<names<<" "<<id<<endl;
+}
+Student::Student(string n,string i)
+		{            
+	  names=n; 
+	   id=i;
+	   }
+int main(){
+	Student s1("madhu","122");----------------------->class4
+	s1.display();
+	return 0;
+}
+
+
+
+
+
+
+ #include<iostream>
+using namespace std;
+class Student{
+	public:
+		static string educain,course;
+		string names,id;//inst
+	   Student(string n,string i);
+	   
+	void display();
+};
+
+string Student::educain="aditya";
+string Student::course="CPP";
+
+void Student::display()
+{
+   cout<<names<<" "<<id<<endl;
+   //cout<<Student::educain<<" "<<Student::course<<endl;----------------------->class 5
+   cout<<educain<<" "<<course<<endl;
+}
+Student::Student(string n,string i)
+		{            
+	  names=n; 
+	   id=i;
+	   }
+int main(){
+	Student s1("madhu","122");
+	s1.display();
+	Student s2("sm","108");
+	s2.display();
+	return 0;
+}
+
+
+
+#include<iostream>
+using namespace std;
+class Bank{
+	public:
+	static string bankname,customers;
+	string empname,id,deposit;
+	int salary;
+	Bank(string e,string i,string d,int s);
+    void display();	
+};
+    string Bank::bankname="UBI";
+    string Bank::customers="1k";
+
+    void Bank::display(){
+    	
+ 	    cout<<empname<<" "<<id<<" "<<deposit<<" "<<salary<<endl;--------------->class 7
+ 	    
+ 	    
+ 	}
+Bank::Bank(string e,string i,string d,int s){
+		empname=e;
+		id=i;
+		deposit=d;
+		salary=s;
+	}
+int main(){
+	Bank s1("meka","yamini satya tejaswini","meri jann",52);
+	s1.display();
+	
+		return 0;
+}
+
+
+
+
+
+
+
+#include<iostream>//default constructor
+using namespace std;
+class Student{
+	public:
+		string name,id;
+		Student(){
+			name="sm";
+			id="7";
+		}
+		void display();
+};
+void Student::display()
+{
+	cout<<"n="<<name<<"b="<<id<<endl;--------------------->class 9
+}
+int main(){
+	Student s1;
+	s1.display();
+	
+}		
+
+
+
+
+ #include<iostream>///////parametrizeed construcoter--------------->class8
+using namespace std;
+class Student{
+	public:
+		string name,id;
+	    Student()
+		{            
+	   name="sudhir"; 
+	   id="123";
+	   }
+	   Student(string name,string id){
+	     this->name=name;
+		 this->id=id;   	
+	   }
+	   
+	void display()
+    {
+   cout<<name<<" "<<id<<endl;
+    }
+};
+
+
+int main(){
+	Student s1,s2;
+	s1.display();
+	s2.display();
+	return 0;
+}
+
+
+
+
+
+ #include<iostream>///////copy construcoter--------------->class9
+using namespace std;
+class Student{
+	public:
+		string name,id;
+	    Student()
+		{            
+	   name="sudhir"; 
+	   id="123";
+	   }
+	   Student(string name,string id){
+	     this->name=name;
+		 this->id=id;   	
+	   }
+	   Student(Student&s){
+	   	this->name=s.name;
+	   	this->id=s.id;
+	   }
+	   
+	void display()
+    {
+   cout<<name<<" "<<id<<endl;
+    }
+};
+
+
+int main(){
+	Student s1,s2;
+	Student s3("ravi","125");
+	Student s4(s2);
+	s1.display();
+	s2.display();
+	s3.display();
+	s4.display();
+	return 0;
+}
+
+
+
+#include<iostream>
+using namespace std;---------------------------->alll types of constructors -------->class 10
+class Student{
+    public:
+        string name,rollno;
+        Student()              //default Constructor
+        {
+            name="Reshma";
+            rollno="1209";
+        }
+        void display()
+        {
+            cout<<name<<" "<<rollno<<endl;
+        }
+        Student(string name,string rollno)            //para Constructor
+        {
+            this->name=name;
+            this->rollno=rollno;
+        }
+        Student(Student &s)
+        {
+            this->name=s.name;                //copy constructer
+            this->rollno=s.rollno;
+        }
+        inline void display(string name,string rollno){
+        	cout<<name<<" "<<rollno<<endl;
+		}
+};
+int main()
+{
+    Student s1,s2;
+    Student s3("harshitha","1201");
+    Student s4(s2);//coonstuctor
+    s1.display();
+    s2.display();
+   s3.display();
+   s4.display();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>   fmily trees ---->essayss--->surprise--- round
+ilc     gre   -->tofen(english 15,000) --->paragraphs,verbal ,phrasses--->all grammer parts----
+ 
+fall    spring 
+
+
+score -->best 
+
+
+lor---letter if reco;m;entatio 
+
+
+
+all---->i20 -->seat caan be confirmed------->
+
+
+   
+
+
+

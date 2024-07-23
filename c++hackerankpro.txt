@@ -1,0 +1,111 @@
+how to use the while looop int the any language ?
+  
+functionss in any language like c and c++
+binary no in the c language ?
+
+
+
+Syntax = for (statement 1; statement 2; statement 3) {
+        // code block to be executed
+        }
+Statement 1 is executed (one time) before the execution of the code block.
+Statement 2 defines the condition for executing the code block.
+Statement 3 is executed (every time) after the code block has been executed.
+
+Example
+    for (int i = 0; i < 5; i++) 
+      cout << i << "\n";
+    }
+
+
+
+Tables program
+-------------
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+    int n;
+    cin >> n;
+
+    for(int i = 1; i <= 10; i++) {
+        cout << n << " x " << i << " = " << n*i << endl;
+    }
+    
+    return 0;
+}
+
+
+
+
+There is also a "for-each loop", which is used exclusively to loop through elements in an array.
+
+  syntax -   for (type variableName : arrayName) {
+             // code block to be executed
+             }
+
+             for (int i: arr) {
+                 cout<<i<<endl;
+             }
+
+
+example for the for each loop below
+                --------            
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+  int num[8] = {10, 20, 30, 40, 50, 60, 70, 80};
+  for(int i :num) {
+   cout << i << endl;
+  }
+
+  return 0;
+} 
+
+
+output is:::
+  
+10
+20
+30
+40
+50
+60
+70
+80
+
+
+
+
+ #include<iostream>///////parametrizeed construcoter
+using namespace std;
+class Student{
+	public:
+		string name,id;
+	    Student()
+		{            
+	   name="sudhir"; 
+	   id="123";
+	   }
+	   Student(string name,string id){
+	     this->name=name;
+		 this->id=id;   	
+	   }
+	   
+	void display()
+    {
+   cout<<name<<" "<<id<<endl;
+    }
+};
+
+
+int main(){
+	Student s1,s2;
+	s1.display();
+	s2.display();
+	return 0;
+}

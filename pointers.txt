@@ -1,0 +1,260 @@
+
+
+char ch;
+scanf("%c",&ch);
+printf("%c",ch
+
+
+//scanf("%[^\n]s",&ch);         ----------either this or next line 
+gets(ch);
+printf("%s",ch);
+
+
+1.   strlen(source)--------->length
+2.   stecpy(d,s)  ------>s1=rama s2=rama
+                                  (s)source   destination(d)------copy
+3.  strcat(s,d)  ------------->n2=rama n2=krishna 
+                                   output : ramakrishna----------------concotenation(combine)
+4. strcmp(s,d) ------------>comapre n1=rama n2=rama
+                                           if iff dif=0 same elsee not (n1,n2)
+5. strev(s) ----------------->reverse s1=rama , s2=amar
+6. strupr
+7. strlwr
+
+21-1-2022
+ 
+-pointers-------------------
+
+pointer is  a variable which is used store address  of the another variable .
+datatype *variable name ;
+
+what is function?
+piece of code or 
+reusability of the code
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+int main()
+
+{
+int a=10;                      ------------->10
+printf("%d\n",a);                        6487580
+printf("%d",&a);
+{
+int a=10;
+int *ptr;
+ptr=&a;
+printf("%d",&a);
+printf("%d",ptr);----------->
+printf("%d",*ptr);-------addres of thr variable
+}
+
+
+
+
+ untyped pointer ------
+{
+int a=10;
+void *ptr;
+ptr=&a;
+printf("%d",*(int *)ptr);
+}
+type testing ------converting one data type to amotherer data type 
+
+
+pointer arithermetic 
+-------------------------------------
+{
+int a=10,b=20;
+int *ptr1,*ptr2;
+ptr1=&a;
+ptr2=&b;
+printf("%d",ptr1-ptr2);
+}
+
+
+normal programs
+------------------------------
+int a=10;,b;
+b=++a;-----------------------1      output :11 11
+printf("%d"a,b);
+
+ int a=10;
+b=a++;------------------------2    output :10 11
+print("%d"a,b);
+
+     
+
+
+programs  of the pointeres
+------------------------------------------------
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int n,i;
+	scanf("%d",&n);
+	int a[n];//declaraion
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+		
+	}
+	for(i=0;i<n;i++)
+	{
+		printf("%d------------->%d\n",&a[i],a[i]);
+		
+	}
+}
+
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int n,i; 
+	scanf("%d",&n);
+	int a[n];//array declaration 
+	int *ptr;
+	ptr=&a;                                                          outpit:
+	printf("%d\n",ptr);
+	for(i=0;i<n;i++)//reading array
+	{
+		scanf("%d",ptr+i);
+	}
+	for(i=0;i<n;i++)//printing the array 
+	{
+		printf("%d--------->%d\n",ptr+i,*(ptr+i));
+	}
+}
+summing the numbers using pointers
+------------------------------------------------------------------
+include<stdio.h>
+#include<string.h>
+int main()
+{
+	int n,i,sum=0; 
+	scanf("%d",&n);                                       output: 5
+	int a[n];//array declaration                                 687656
+	int *ptr;                                                                    1 2 3 4 5
+	ptr=&a;                                                                       15
+	printf("%d\n",ptr);
+	for(i=0;i<n;i++)//reading array
+	{
+		scanf("%d",ptr+i);
+	}
+	for(i=0;i<n;i++)//printing the array 
+	{
+		//printf("%d--------->%d\n",ptr+i,*(ptr+i));
+		sum=sum+*(ptr+i);
+	}
+	printf("%d",sum);
+}
+
+largest aming 3 numbers using pointers 
+------------------------------------------------------------------
+#include<stdio.h>
+#include<string.h>
+int main()
+{                                                                                     output:1 2 3
+	int a,b,c;
+	scanf("%d%d%d",&a,&b,&c);                                       3 biiger
+	int *ptr1,*ptr2,*ptr3;
+	ptr1=&a;
+	ptr2=&b;
+	ptr3=&c;
+	if(*ptr1>*ptr2&&*ptr1>*ptr3)
+	{
+		printf("%d bigger",*ptr1);
+	}
+		else if(*ptr2>*ptr1&&*ptr2>*ptr3)
+	{
+		printf("%d bigger",*ptr2);
+	}	
+	else
+	{
+		printf("%d bigger",*ptr3);
+	}
+}
+
+swapping using pointers(functions)(call by value)
+--------------------------------------------
+#include<stdio.h>
+void swap(int,int);
+	int main()
+	{
+		int a,b;
+		scanf("%d%d",&a,&b);         output: 20 30 
+		swap (a,b);                                      x=20,y=30,a=30,b=20
+		printf("a=%d b=%d",a,b);
+	}
+void swap(int x,int y)
+{
+	int t;
+	t=x;
+	x=y;
+	y=t;
+	printf("x=%d y=%d",x,y);
+}
+call by reference
+------------------------------
+#include<stdio.h>
+void swap(int *,int *);
+	int main()
+	{
+		int a,b;
+		scanf("%d%d",&a,&b);
+		swap (a,b);
+		printf("a=%d b=%d",a,b);//address is different values are same
+	}
+void swap(int *x,int *y)
+{
+	int t;
+	t=*x;
+	*x=*y;
+	*y=t;
+	printf("x=%d y=%d",*x,*y);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

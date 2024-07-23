@@ -1,0 +1,103 @@
+24- online class- of /bit/ly is
+--------------------------------
+Average = (sum of observation/no of observation) 
+Ex::10,20,30,40,50/5=30
+::If difference is in a sequence(consecutive manner) then add 1 st and  last no( or) middle term
+:: same quantity like all in kgs( or) cm
+etc . 
+Consecutive natural numbers::
+----------------------------------------------------
+X, x+1, x+2,x+3,x+4-----(1, 2,3,4,5) 
+Consecutive even numbers::
+---------------------------------------------------
+X, x+2, x+4, x+6-----(2, 4,6,8) 
+Consecutive odd numbers::
+---------------------------------------------------
+X, x+2, x+4, x+6---(1, 3,5,7,9) 
+Important formulas::
+--------------------------------
+Sum of first 'n' natural nos:: n* (n+1) /2
+Average of first n' natural nos::(n+1) /2
+Sum of the squares of first n' natural nos::((n+1) (2n+1)) /6
+Sum of the cubes of first n' natural nos::(n2(n+1)2)/4
+Average of first "n" Consecutive odd no=n
+Average of first "n" Consecutive even no=n+1)                                 Even         en            Odd
+Avg      n+1             n
+
+
+
+probelms:
+----------
+ find averge of first 18 natural numbers?
+
+sol:
+(n+1)/2=(18+1)/2=19/2=9.5  (OR) 1,,2,3,----18  1+18/2=9.5
+
+ find averge of first 20 multiples of 3 numbers?
+sol:
+3,6,9,12,---60=(3+60)/2=63/2=31.5
+
+
+calculare the average of the sqares of natural number from 1 to 10
+1^2,,2^2,,3^2,----10^2
+(n+1)(2n+1)/6=(10+1)(2*10+1)/6=38.5
+
+
+calculare the average of the cubes of natural number from 1 to 10
+1^3,,2^3,,3^3,----10^3
+(n*(n+1)^2)/4=(10*(10+1))/4=27.5
+
+
+***if the avergea of first "n" consecutive odd no(1,3) is 60.then find the sum of rhe numbers.
+sol:
+avg=sum of no/no of obs
+s.o=avg*no
+s.o=60*n=60*60=3600
+1,3=1+3/2=2
+1,3,5=5
+1,3,5,7,=4
+1,3,5,7,,9=5
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+25- online class- of /bit/ly is
+--------------------------------
+
+average of 31 students is 11.5 years.if teacher is age is included averge age is increased by 1. What is the teachers age?
+sol:
+  aver=sum of obs/no of obser
+  here given is sum(31)=11.5(avg)*31(no of stud)=356.5
+   and increasedd is sum(32)=12.5(avg)*32=400
+    400-356.5=44.5 is the answer
+==========================================================================================================================================
+
+26- online class- of /bit/ly is
+--------------------------------
+
+1.the avg age if 39 students and a teacher of acladd are is 11 years.If the age of teacher is excluded the avg age of the class is reduced by 1.What is the age off teacher?
+sol:
+  sum
+
+2.the aveerge age of the  4 brothers is 12 years. if the age of their mother ris also includeed, the averge eis increased by 5 years. the age of the mother in years is?
+sol:
+  sum(4)=4*12=48
+  sum(5)=5*17((12+5))=85
+    85-48=37
+
+3.5 years ago , the averrage of A,B,C and D was 45 years. With E join them now, the average of all the all five is 49 years. How old is E?
+sol:
+  
+       (+1 4-50,5-49)-1
+     4*50=200    245-200=45
+     5*49=245
+4.3 years ago , the averrage of 5 members was 17 years. With a baby join them now, the average  age of family member is the samre today?
+the present age of the baby is?
+sol:
+  (+1 5-20,6-17)-3
+  17-15=2 years
+  5*20=100    102-100=2 years
+  66*17=102
+5.the average age of 400 students of a class is 15 years.When  10 new student are admited, the average is incereased by 0.2 years. the average age of the new students is?
+sol:
+  40-15
+  (+10 50-15.2)0.2
+6.=======================================================================================================================================

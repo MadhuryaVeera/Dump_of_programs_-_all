@@ -1,0 +1,37 @@
+x--create
+w--create,write
+a--create and write advantage is to add the previous data without losing the precvious data
+r--wothout data and withoit file cant aaccess
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
